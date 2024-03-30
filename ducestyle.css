@@ -1,0 +1,71 @@
+* {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #21325e;
+    
+}
+
+h4 {
+    margin-left: 20px;
+}
+
+.intro {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin: 100px 80px 100px auto;
+    padding: 4%;
+    box-sizing: border-box; /*width 속성 값을 콘텐츠 영역에 테두리까지 포함한 박스 모델 전체 너비 값으로 사용*/
+    font-size: 140%;
+    text-align: left;
+}   /*콘텐츠 너비 높이를 %로 하고 테두리를 원형으로 만드는 법은 없나*/
+
+.intro2 {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin: 100px auto 100px 80px;
+    padding: 5%;
+    box-sizing: border-box;
+    font-size: 140%;
+    text-align: left;
+}  
+
+.choice {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 200px 0 0;
+}
+
+.quote {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 300%;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 100px;
+}
+
+.img1 {
+    position: relative;
+    left: 300px;
+    width: 400px;
+
+}
+
+.img2 {
+    position: relative;
+    width: 400px;
+    right: -500px;
+}
