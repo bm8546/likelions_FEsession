@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금오산 복숭아 주문서</title>
+
+    <style>
+        h2{
+            text-align: center;
+        }
+        fieldset{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h2>복숭아 주문서</h2>
+            <label for="name">
+                이름&#58;
+                <input type="text" required>
+            </label>
+            <br>
+            <label for="tel">
+                전화번호&#58;
+                <input type="tel" required>
+            </label>
+            <br><br>
+
+            <label for="select">
+                주문하실 상품을 선택해주세요    <br>
+                <input type="checkbox" name="product" id="honey_peach_1"> 꿀복숭아 1kg
+                <input type="checkbox" name="product" id="honey_peach_3"> 꿀복숭아 3kg <br>
+                <input type="checkbox" name="product" id="sky_peach_1"> 천도복숭아 1kg
+                <input type="checkbox" name="product" id="sky_peach_2"> 천도복숭아 3kg
+            </label>
+            <br><br>
+            
+            <label for="package">
+                상품 포장 여부  <br>
+                <input type="radio" name="package_">예
+                <input type="radio" name="package_" checked>아니오
+            </label>
+            <br><br>
+
+            <label for="delivery_date">
+                배송 날짜 선택&#58;
+                <input type="date">
+            </label>
+            <br><br>
+
+            <label for="delivery_request">
+                배송 요청 사항
+            </label>
+                <select name="request" id="request_select">
+                    <option value="">배송 시 요청사항을 선택해주세요</option>
+                    <option value="request_door">문 앞에 두고 가주세요</option>
+                    <option value="request_caps">경비실에 맡겨주세요</option>
+                </select>
+            <br><br>
+
+            <button type="submit">확인</button>
+            <button type="reset">취소</button>
+
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
