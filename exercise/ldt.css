@@ -1,0 +1,29 @@
+.body {
+    background-color: black;
+}
+
+.block {
+    background-color: #2c5c34;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.white {
+    color: white;
+}
+
+.em{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.list {
+    margin: 20px 40px;
+}
+
+.text {
+
+}

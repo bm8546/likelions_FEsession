@@ -1,0 +1,42 @@
+#title-area {
+    background-color: rgb(83, 125, 83);
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text {
+    color: beige;
+    margin: 0;
+}
+
+#ol-area {
+    background-color: rgb(54, 132, 171);
+}
+
+#ol-area h5 {
+    margin: 0;
+}
+
+.highlight {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p-area {
+    background-color: #a5db4d;
+}
+
+.span-area {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.img-area {
+    width: 20%;
+    border-radius: 40%;
+}

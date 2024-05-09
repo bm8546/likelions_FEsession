@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100vw;
+            height: 10vh;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: grey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav{
+            width: 200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        p:hover{
+            color: red;
+        }
+        h2{
+            width: 100px;
+        }
+
+        body{
+            width: 100vw;
+            height: 90vh;
+        }
+        .input-section{
+            width: 30vw;
+            height: 500px;
+        }
+        .img-section{
+            width: 70vw;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 200px;
+        }
+        img:hover{
+            transition-duration: 1s;
+            transform: rotate(360deg);
+        }
+        div{
+            width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        fieldset{
+            width: 200px;
+            height: 100px;
+        }
+        input:focus{
+            border-color: red;
+            outline: none;
+            color: red;
+        }
+        button:active{
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            transition-timing-function: ease;
+        }
+        input{
+            width: 100px;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            transition-property: background-color;
+            transition-duration: 2s;
+        }
+        aside{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            animation-name: move;
+            animation-duration: ;
+            animation-iteration-count: infinite;
+        }
+            @keyframes move {
+                0%{
+                    transform: translate(-20px,100px);
+                }
+                50%{
+                    transform: translate(0, 10px);
+                }
+                100%{
+                    transform: translate(20px,10px);
+                }
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>logo</h2>
+        <nav>
+            <p>nav1</p>
+            <p>nav2</p>
+            <p>nav3</p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="img-section">
+            <div>
+                <img src="flower.jpg">
+                <img src="flower.jpg">
+                <img src="flower.jpg">  <br>
+                <img src="tree.jpg">
+                <img src="tree.jpg"><br>
+                <img src="flower.jpg">
+                <img src="flower.jpg">
+                <img src="flower.jpg">
+            </div>
+                
+        </section>
+
+        <section class="input-section">
+            <form action="">
+                <fieldset>
+                    <label for="">
+                        id: <input type="text">
+                    </label>    <br>
+                    <label for="">
+                        pw: <input type="password">
+                    </label>    <br>
+                    <button type="submit">로그인</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <aside><h1>애니메이션을 배워보자!</h1></aside>
+    </main>
+</body>
+</html>

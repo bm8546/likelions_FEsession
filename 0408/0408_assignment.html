@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout copy</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        header{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h3{
+            width: 100px;
+            position: relative;
+            left: 125px;
+        }
+        nav{
+            width: 200px;
+            height: 100px;
+        }
+        ul{
+            list-style: none;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        aside{
+            width: 25%;
+            height: 90vh;
+            background-color: #838E7E;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .aside_sec_btn {
+            width: 80%;
+            height: 150px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+        button{
+            width: 70px;
+            margin-bottom: 30px;
+        }
+        .aside_sec_9div{
+            width: 80%;
+            height: 400px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .hidden{
+            width: 90%;
+            height: 100px;
+            background-color: blueviolet;
+            visibility: hidden;
+        }
+        .abc{
+            width: 90%;
+            height: 25px;
+            border-style: double;
+            border-width: 1px;
+
+        }
+        .grey{
+            width: 90%;
+            height: 20px;
+            background-color: #F5F5F5;
+        }
+
+        .layer{
+            display: flex;
+        }
+        main{
+            width: 75%;
+            height: 90vh;
+            background-color: #DCDCDC;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec_palette{
+            width: 95%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .palette1{
+            width: 70px;
+            height: 70px;
+            background-color: #D2D2D2;
+        }
+        .palette2{
+            width: 70px;
+            height: 70px;
+            background-color: #CEE4D5;
+        }
+        .palette3{
+            width: 70px;
+            height: 70px;
+            background-color: #C6DFCE;
+        }
+        .palette4{
+            width: 70px;
+            height: 70px;
+            background-color: #C0D2C5;
+        }
+        .palette5{
+            width: 70px;
+            height: 70px;
+            background-color: #ACC5AF;
+        }
+        .palette6{
+            width: 70px;
+            height: 70px;
+            background-color: #86A894;
+        }
+        .palette7{
+            width: 70px;
+            height: 70px;
+            background-color: #BDDDCB;
+        }
+        .palette8{
+            width: 70px;
+            height: 70px;
+            background-color: #A0C6BF;
+        }
+
+        .checkline{
+            width: 80%;
+            height: 40px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox{
+            width: 20px;
+            height: 20px;
+            border-style: double;
+            border-width: 1px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>My BUCKET</h3>
+        <nav>
+            <ul>
+                <li>login</li>
+                <li>sign up</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layer">
+
+        <aside>
+            <section class="aside_sec_btn">
+                <button>remain</button>
+                <button>complete</button>        
+            </section>
+            
+            <section class="aside_sec_9div">
+            <div class="hidden"></div>
+            <div class="abc"></div>
+
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+            <div class="grey"></div>
+        </section>
+    </aside>
+
+    <main>
+        <section class="sec_palette">   <!--인라인 태그로 색 넣어도 좋다. style에 일일히 적는 거 힘듦. 아니면 칠드런? 같은 거 사용-->
+            <div class="palette1"></div>
+            <div class="palette2"></div>
+            <div class="palette3"></div>
+            <div class="palette4"></div>
+            <div class="palette5"></div>
+            <div class="palette6"></div>
+            <div class="palette7"></div>
+            <div class="palette8"></div>
+        </section>
+
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+        <div class="checkline"><div class="checkbox"></div></div>
+    </main>
+    </div>
+</body>
+</html>
+
+<!--
+    aside section 간 여백을 어떻게 줄이지
+    요소 간 세로 여백 어케 조절해여?
+-->

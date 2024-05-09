@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: "Sunflower", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        ul{
+            list-style-type: none;
+        }
+        form{
+            width: 500px; 
+                
+        }
+        div{
+            padding: 50px;
+        }
+        </style>
+</head>
+<body>
+    <h1>환영합니다&#33;</h1>
+    <p>저희 사이트를 시작하기 위해 간단한 정보를 입력해주세요&#33;</p>
+    <br>
+    <div>
+        <form action="">    
+        <!--form을 적지 않으면 걍 겉만 있는 거겠지? submit 눌러도 정보가 어딘가로 전송되지 않는다는 뜻-->
+        <fieldset>    
+        <!--fieldset은 form 안에서 구분(블럭)짓는 것. legend 는 fieldset의 이름-->
+            <label for="아이디">
+                ID &#58;
+                <input type="text" required 
+                minlength="8" maxlength="12" size="10"
+                autofocus>
+            </label>
+            <br>
+            <label for="비밀번호">
+                PW &#58;
+                <input type="password" required 
+                minlength="8" maxlength="12" size="10">
+            </label>
+            <br>
+            <label for="이메일">
+                이메일 주소 &#58;
+                <input type="email" required>
+            </label>
+
+
+            <br><br>
+            <!--선택입력-->
+            <label for="생년월일">
+                생년월일 &#58;
+                <input type="date">
+            </label>
+            <br>
+            <p>성별</p>
+            <ul>
+            <li><label> <input type="radio" name="gender" id="woman"> 여성</label></li>
+            <li><label> <input type="radio" name="gender" id="man"> 남성</label></li>
+            <li><label> <input type="radio" name="gender" id="idk_gen" checked> 표시 안함</label></li>
+            </ul>
+            <br><br>
+
+            <!--제출 페이즈-->
+            <label for="취소_제출버튼">
+                <button type="reset">취소</button>
+                <button type="submit">가입하기</button>
+            </label>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- 궁금한 점
+fieldset 크기가 페이지 중앙에 오게끔
+입력창이 다 끝이 맞게끔
+라디오 버튼 들여쓰기 안 되게 끔
+submit 버튼 오른쪽으로-->
